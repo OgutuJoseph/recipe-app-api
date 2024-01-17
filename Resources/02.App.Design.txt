@@ -4,7 +4,12 @@ Section 2: App Design
 
 
 5. App Overview
-• 
+• Features
+    ☺ 19 API Endpoints
+        -> Managing users, recipes, tags, ingredients
+    ☺ User Authentication
+    ☺ Browserable Admin Interface (Django Admin)
+    ☺ Browsable API (Swagger)
 
 
 
