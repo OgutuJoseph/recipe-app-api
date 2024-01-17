@@ -45,6 +45,12 @@ Section 2: App Design
 
 
 7. Django Project Structure
-• 
+• Apps
+    ♦ app/         -   Django Project
+    ♦ app/core/    -   Code shared between multiple apps 
+                            -> e.g., Database definition
+    ♦ app/user/    -   User related code
+                            -> user registration & auth tokens
+    ♦ app/recipe/  -   Recipe related code
 
 
