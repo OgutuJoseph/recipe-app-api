@@ -1,0 +1,19 @@
+Section 2: App Design
+
+
+
+
+5. App Overview
+• 
+
+
+
+6. Technologies
+• 
+
+
+
+7. Django Project Structure
+• 
+
+
