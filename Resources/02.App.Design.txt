@@ -1,0 +1,56 @@
+Section 2: App Design
+
+
+
+
+5. App Overview
+• Features
+    ☺ 19 API Endpoints
+        -> Managing users, recipes, tags, ingredients
+    ☺ User Authentication
+    ☺ Browserable Admin Interface (Django Admin)
+    ☺ Browsable API (Swagger)
+
+
+
+6. Technologies
+• Python
+    - Programming Language
+
+• Django
+    - Python Web Framework
+    - Handles
+        -> URL Mappings
+        -> Object Relational Mapper
+        -> Admin site
+
+• Django REST Framework
+    - Django add on
+    - Buildd REST APIs
+
+• Postgres
+    - Database
+
+• Docker
+    - Development environment  
+
+• Swagger
+    - Tool to generate documentation for API
+
+• GitHub Actions
+    - Automation
+        -> Testing and Linting              
+
+
+
+
+7. Django Project Structure
+• Apps
+    ♦ app/         -   Django Project
+    ♦ app/core/    -   Code shared between multiple apps 
+                            -> e.g., Database definition
+    ♦ app/user/    -   User related code
+                            -> user registration & auth tokens
+    ♦ app/recipe/  -   Recipe related code
+
+
