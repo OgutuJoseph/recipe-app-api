@@ -14,7 +14,33 @@ Section 2: App Design
 
 
 6. Technologies
-• 
+• Python
+    - Programming Language
+
+• Django
+    - Python Web Framework
+    - Handles
+        -> URL Mappings
+        -> Object Relational Mapper
+        -> Admin site
+
+• Django REST Framework
+    - Django add on
+    - Buildd REST APIs
+
+• Postgres
+    - Database
+
+• Docker
+    - Development environment  
+
+• Swagger
+    - Tool to generate documentation for API
+
+• GitHub Actions
+    - Automation
+        -> Testing and Linting              
+
 
 
 
