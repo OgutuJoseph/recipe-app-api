@@ -2,7 +2,7 @@
 URL     : https://absagroup.udemy.com/course/django-python-advanced/learn
 Title   : Build a Backend REST API with Python & Django - Advanced
 
-Current Tutorial    : #14
+Current Tutorial    : #15
 Course PDF          : --
 
 Section 1: Introduction
