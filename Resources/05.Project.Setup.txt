@@ -154,6 +154,7 @@ Section 5: Project Setup
 
 20. Run project with Docker Compose
 • 
+    --> docker-compose up
 
 
 
