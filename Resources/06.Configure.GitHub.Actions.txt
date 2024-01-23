@@ -26,7 +26,12 @@ Section 6: Configure GitHub Actions
 
 
 23. Configuring GitHub Actions
-• 
+• How we'll configure GitHub Actions
+    ☺ Create a config file at .github/workflows/checks.yml
+        -> Set trigger
+        -> Add steps for running testing and linting
+    ☺ Configure Docker Hub auth
+    
 
 
 
