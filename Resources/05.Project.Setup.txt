@@ -148,6 +148,7 @@ Section 5: Project Setup
 
 19. Create Django project
 • 
+    --> docker-compose run --rm app sh -c "django-admin startproject app ."
 
 
 
