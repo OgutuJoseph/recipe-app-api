@@ -1,0 +1,39 @@
+Section 3: Test Driven Development
+
+
+
+
+
+8. What is Test Driven Development
+• Test Driven Development
+    ☺ Unit Tests
+        -> Code in which tests Code
+            ♦ Sets up conditions / inputs
+            ♦ Runs a piece of Code
+            ♦ Checks outputs with 'assertions'
+        -> Benefits
+            ☺ Ensures code runs as expected
+            ☺ Catches bugs
+            ☺ Improves reliability
+
+    ☺ What is TDD
+        - Development practice
+            [Write code] -> [Write test] - ×
+            [Write test] -> [Write code] - ✓
+
+            • TDD Process
+                [Write Test] -> [Run Test (Fails)] -> [Add Feature] -> [Run Test (Passes)] -> [Re-factor]
+
+    ☺ Why use TDD
+        - Better understanding of code
+        - Make changes with confidence
+        - Reduce bugs
+
+
+
+
+Quiz 1: Test Driven Development Quiz
+• 
+
+
+
