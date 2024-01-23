@@ -123,7 +123,21 @@ Section 5: Project Setup
 
 
 17. Linting and Tests
-• 
+• What is Linting?
+    - Tool to check code formatting
+    - Highlight errors, typos, formatting issues
+
+    ○ How we'll handle Linting  
+        -> Install flake8 package
+        -> Run it through Docker compose
+            --> docker-compose run --rm app sh -c "flake8"
+
+
+• Testing
+    -> Django test suite
+    -> Setup tests per Django app
+    -> Run tests through Docker Compose
+        --> docker-compose run --rm app sh -c "python manage.py test"
 
 
 
@@ -134,6 +148,7 @@ Section 5: Project Setup
 
 19. Create Django project
 • 
+    --> docker-compose run --rm app sh -c "django-admin startproject app ."
 
 
 
