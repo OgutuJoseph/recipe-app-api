@@ -5,7 +5,49 @@ Section 7: Test Driven Development with Django
 
 
 27. Testing in Django
-• 
+• Django test framework 
+    - In built
+    - Based on the unittest library
+    - Django adds features
+        ☺ Test client -dummy web browser
+        ☺ Simulate authentication
+        ☺ Temporary database
+    
+    - Django REST Framework adds features
+        ☺ API test client
+
+• Where do you put tests?
+    - Placeholder [tests.py] added to each app
+    - Alternatively, create [tests/] subdirectory to split tests up
+    - Keep in mind:
+        ○ Only use [tests.py] or [tests/] directory <not both>
+        ○ Tests modules must start with [test_]
+        ○ Test directories must contain [__init__.py] <this is what allows Django to pick tests in the main runner>
+
+
+• Test Database
+    - Test  code that uses DB
+    - Django automatically creates a specific database for tests
+
+
+• Test classes
+    ♦ SimpleTestCase
+        - No database integration 
+        - Useful if no database required for your test
+        - Save time executing tests
+    ♦ TestCase
+        - Database integration
+        - Useful for testing code that uses the database
+
+
+• Writing Tests
+    ○ Import test class
+    ○ Import objects to test
+    ○ Define test class
+    ○ Add test method
+    ○ Setup inputs
+    ○ Execute code to be tested
+    ○ Check output
 
 
 
