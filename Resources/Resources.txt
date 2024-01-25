@@ -2,7 +2,7 @@
 URL     : https://absagroup.udemy.com/course/django-python-advanced/learn
 Title   : Build a Backend REST API with Python & Django - Advanced
 
-Current Tutorial    : #16
+Current Tutorial    : #26
 Course PDF          : --
 
 Section 1: Introduction
@@ -45,3 +45,12 @@ Section 6: Configure GitHub Actions
 25. Configure Docker Hub credentials
 26. Test GitHub Actions
 Quiz 3: GitHub Actions configuretion
+
+Section 7: Test Driven Development with Django
+27. Testing in Django
+28. Write a Test
+29. Write a test using TDD
+30. Mocking
+31. Testing web requests
+32. Common testing problems
+Quiz 4: TDD with Django
