@@ -55,4 +55,16 @@ Section 7: Test Driven Development with Django
 32. Common testing problems
 Quiz 4: TDD with Django
 
-Section 8: 
+Section 8: Configure Database
+33. Database architecture overview
+34. Add database service
+35. Database configuration with Django
+36. Install PostgreSQL database adaptor
+37. Configure database in Django
+38. Fixing database race condition
+39. Create core app
+40. Write tests for wat_for_db command
+41. Add wait_for_db command
+42. Database migrations
+43. Update Docker Compose and CI/CD
+44. Summary
