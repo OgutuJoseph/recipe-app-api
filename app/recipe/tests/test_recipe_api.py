@@ -71,7 +71,7 @@ class PrivateRecipeAPITests(TestCase):
             'other@example.com',
             'password123'
         )
-        create_recipe(user=self.user)
+        create_recipe(user=other_user)
         create_recipe(user=self.user)
 
         res = self.client.get(RECIPES_URL)
