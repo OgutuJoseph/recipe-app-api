@@ -384,11 +384,14 @@ class PrivateRecipeAPITests(TestCase):
         """Test filtering recipes by tags"""
         r1 = create_recipe(user=self.user, title='That vegetable curry')
         r2 = create_recipe(self.user, title='Aubergine with tahini')
-        tag1 = Tag.objects.create(self.user, title='Vegan')
-        tag2 = Tag.objects.create(self.user, title='Vegetarian')
+        tag1 = Tag.objects.create(user=self.user, name='Vegan')
+        tag2 = Tag.objects.create(user=self.user, name='Vegetarian')
         r1.tags.add(tag1)
         r2.tags.add(tag2)
         r3 = create_recipe(self.user, title='Fish and chips')
+
+        params = {'tags': f'{tag1.id},{tag2.id}'}
+        res = self.client.get(RECIPES_URL, params)
 
         s1 = RecipeSerializer(r1)
         s2 = RecipeSerializer(r2)
@@ -396,16 +399,14 @@ class PrivateRecipeAPITests(TestCase):
         self.assertIn(s1.data, res.data)
         self.assertIn(s2.data, res.data)
         self.assertNotIn(s3.data, res.data)
-
-        params = {'tags': f'{tag1.id},{tag2.id}'}
-        res = self.client.get(RECIPES_URL, params)
+        
 
     def test_filter_by_ingredients(self):
-        """Test filtering recipes by tags"""
+        """Test filtering recipes by ingredients"""
         r1 = create_recipe(user=self.user, title='Posh beans and toast')
         r2 = create_recipe(self.user, title='Chicken masala')
-        in1 = Ingredient.objects.create(self.user, title='Cheese')
-        in2 = Ingredient.objects.create(self.user, title='Chicken')
+        in1 = Ingredient.objects.create(user=self.user, name='Cheese')
+        in2 = Ingredient.objects.create(user=self.user, name='Chicken')
         r1.ingredients.add(in1)
         r2.ingredients.add(in2)
         r3 = create_recipe(self.user, title='Red lentil daal')
