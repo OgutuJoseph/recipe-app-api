@@ -11,6 +11,8 @@ from rest_framework.permissions import IsAuthenticated
 from core.models import Recipe, Tag, Ingredient
 from recipe import serializers
 
+# Create your views here.
+
 @extend_schema_view(
     list=extend_schema(
         parameters=[
@@ -27,8 +29,6 @@ from recipe import serializers
         ]
     )
 )
-
-# Create your views here.
 
 class RecipeViewSet(viewsets.ModelViewSet):
     """View for manage recipe APIs"""
