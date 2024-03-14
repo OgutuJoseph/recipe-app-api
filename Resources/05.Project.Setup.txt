@@ -1,0 +1,169 @@
+Section 5: Project Setup
+
+
+
+
+11. New project overview
+• In this Section   
+    - Introduction to using Docker for development
+    - Create a new project
+    - Using Docker with Django
+    - Setting new Django project
+    - Linting and Testing
+    - Using Docker Compose
+
+
+    • Why use Docker?
+        -> Consistent dev and prod environment
+        -> Easier collaboration
+        -> Capture all dependencies as code
+            ♦ Python requirements
+            ♦ Operating system dependencies
+        -> Easier cleanup
+
+    • How we'll use Docker
+        - Define Dockerfile
+        - Create Docker Composition configuration
+        - Run all commands via Docker compose
+
+    • Docker on GitHub Actions
+        -> Docker Hub introduced rate limit
+            ♦ 100 pulls / 6hr for unauthenticated users
+            ♦ 200 pulls / 6hr for unauthenticated users
+         * GitHub Actions is a shared service
+            ♦ 100 pulls / 6hr for all users
+
+            ****To solve above****
+            ☺ Authenticate with Docker Hub
+                - Create account
+                - Setup credentials
+                - Login before running job
+                - Get 200 pulls / 6hr for free
+
+
+12. Create GitHub project
+• 
+    DOCKERHUB_USER  -   ogutujoseph
+    DOCKERHUB_TOKEN -   dckr_pat_q2Xii04k_te_mPnH6OXcozBEUe0
+
+
+
+13. Docker and Django
+• Using Docker with Django
+    ☺ Many Benefits
+        -> Consistent dev and prod environment
+        -> Easier collaboration
+        -> Capture all dependencies as code 
+        -> Easier cleanup
+        -> Save a LOT of time
+    
+    ☺ Drawbacks
+        -> VSCode unable to access interpreter
+        ->  More difficult to use integrated features (e.g., Linting and Interactive Debugger)
+                ○ Use Terminal
+
+
+• Configure Docker
+    ○ Create Dockerfile
+    ○ List steps for creating image
+        - Choose a base image (python)
+        - Install dependencies
+        - Setup users
+
+
+• Configure Docker Compose
+    - How Dockerimage(s) shoul be used
+    - Define services
+        ☺ Name (e.g., app)
+        ☺ Port mappings
+        ☺ Volume mappings
+
+
+• Using Docker Compose
+    - Run all commands through Docker Compose
+        -> docker-compose run --rm app sh -c "pythong manage.py collectstatic"
+
+        ♦ docker-compose   -   runs a Docker Compose command
+        ♦ run              -   will start a specific container defined in config
+        ♦ --rm             -   removes the container
+        ♦ app              -   is the name of the service
+        ♦ sh -c            -   passes in a shell command
+        • <"">             -   command to run inside container
+
+
+
+
+14. Define Python requirements
+• 
+
+
+
+15. Create project Dockerfile
+• 
+    RUN python -m venv /py && \                         --> creates virtual environment to be used to store dependencies
+    /py/bin/pip install --upgrade pip && \              --> upgrades python package manager in environment
+    /py/bin/pip install -r /tmp/requirements.txt && \   --> install requirements in virtual environment
+    rm -rf /tmp && \                                    --> remove extra files (temp) that are not needed [keeps app lightweight]
+    adduser \                                           --> best practice not to use root user which would've been case withou this line
+        --disabled-password \
+        --no-create-home \
+        django-user
+
+
+    ENV PATH="/py/bin:$PATH"        --> updates environment variable inside image with 'PATH' variable
+
+    USER django-user                --> switches user from root to defined user
+
+
+
+
+16. Create Docker Compose configuration
+• 
+
+
+
+17. Linting and Tests
+• What is Linting?
+    - Tool to check code formatting
+    - Highlight errors, typos, formatting issues
+
+    ○ How we'll handle Linting  
+        -> Install flake8 package
+        -> Run it through Docker compose
+            --> docker-compose run --rm app sh -c "flake8"
+
+
+• Testing
+    -> Django test suite
+    -> Setup tests per Django app
+    -> Run tests through Docker Compose
+        --> docker-compose run --rm app sh -c "python manage.py test"
+
+
+
+18. Configure flake8
+• 
+
+
+
+19. Create Django project
+• 
+    --> docker-compose run --rm app sh -c "django-admin startproject app ."
+
+
+
+20. Run project with Docker Compose
+• 
+    --> docker-compose up
+
+
+
+21. Project setup overview
+• 
+
+
+
+Quiz 2: Docker and Docker Compose
+• 
+
+
