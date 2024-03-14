@@ -1,0 +1,17 @@
+Section 4: System Setup
+
+
+
+
+9. What to install
+• Applications to install
+    - VSCode
+    - Docker Desktop / Docker for Linux
+    - Git
+
+
+
+10. Setup confirmation
+• 
+
+
