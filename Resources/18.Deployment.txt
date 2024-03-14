@@ -1,0 +1,114 @@
+Section 18: Deployment
+
+
+
+
+
+136. Deployment plan 
+• 
+
+
+
+
+173. Django deployment overview 
+• 
+
+
+
+
+138. Add uWSGI to project 
+• 
+
+
+
+
+139. Create proxy configs 
+• 
+
+
+
+
+140. Create proxy Dockerfile 
+• 
+
+
+
+
+141. Handling configuration 
+• 
+
+
+
+
+142. Create docker compose config 
+• 
+
+
+
+
+143. Update Django settings
+•
+    -> docker-compose -f docker-compose-deploy.yml up
+
+
+
+
+144. Creating a virtual server 
+• 
+
+
+
+
+145. Create AWS account and user
+• 
+
+
+
+
+146. Upload SSH Key to AWS 
+• 
+
+
+
+
+147. Create EC2 Instance 
+• 
+
+
+
+
+148. Setup GitHub Deploy Key 
+• 
+
+
+
+
+149. Install Docker, Compose and Git 
+• 
+
+
+
+
+150. Clone and Configure project 
+• 
+
+
+
+
+151. Run service 
+• 
+
+
+
+
+152. Updating service 
+• 
+
+
+
+
+153. Deployment summary
+• 
+
+
+

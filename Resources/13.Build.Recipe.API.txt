@@ -1,0 +1,88 @@
+Section 13: Build recipe API
+
+
+
+
+75. Recipe API design
+• 
+
+
+
+
+76. APIView vs Viewsets
+• 
+
+
+
+
+77. Write test for recipe model
+• 
+
+
+
+
+78. Implement recipe model 
+• 
+
+
+
+
+79. Create recipe app 
+• 
+
+
+
+
+80. Write tests for listing recipes 
+• 
+
+
+
+
+81. Implement recipe listing API 
+• 
+
+
+
+
+82. Write tests for recipe detail API 
+• 
+
+
+
+
+83. Implement recipe detail API 
+• 
+
+
+
+
+84. Write tests for creating recipes 
+• 
+
+
+
+
+85. Implement create recipe API 
+• 
+
+
+
+
+86. Add additional tests 
+• 
+
+
+
+
+87. Review recipe API in browser 
+• 
+
+
+
+
+88. Summary
+• 
+
+
+
