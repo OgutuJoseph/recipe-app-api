@@ -1,0 +1,59 @@
+Section 9: Create User Model
+
+
+
+
+
+45. The Django user Model
+• 
+
+
+
+
+46. Design custom user Model
+• 
+
+
+
+
+47. Add user model tests
+• 
+
+
+
+
+48. Implement user model
+• 
+
+
+
+
+49. Normalize email address
+• 
+
+
+
+
+50. Require email input
+• 
+
+
+
+
+51. Add superuser Supported
+• 
+
+
+
+
+52. Test user model
+• 
+
+
+
+
+53. Summary of Create User Model
+• 
+
+
+
