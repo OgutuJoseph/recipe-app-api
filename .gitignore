@@ -2,3 +2,6 @@ Resources
 .env
 app/app/__pycache__
 app/core/__pycache__
+app/core/management/__pycache__
+app/core/migrations/__pycache__
+app/recipe/__pycache__
