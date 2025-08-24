@@ -1,0 +1,41 @@
+Section 11: API Documentation
+
+
+
+
+
+58. Importance of API Documentation
+• 
+
+
+
+
+59. Auto docs with DRF
+• 
+
+
+
+
+60. Install drf-spectacular
+• 
+
+
+
+
+61. Configure URLs
+• 
+
+
+
+
+62. Test Swagger UI
+• 
+
+
+
+
+63. Summary
+• 
+
+
+

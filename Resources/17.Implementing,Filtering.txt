@@ -1,0 +1,41 @@
+Section 17: Implement Filtering
+
+
+
+
+
+129. Filtering Design
+• 
+
+
+
+
+130. Add tests for filtering recipes
+• 
+
+
+
+
+131. Implement recipe filter feature
+• 
+
+
+
+
+132. Add tests for filtering tags and ingredients
+• 
+
+
+
+
+133. Implement tag and ingredient filtering 
+• 
+
+
+
+
+134. Review filtering in browser
+• 
+
+
+
